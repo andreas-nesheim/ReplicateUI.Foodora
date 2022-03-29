@@ -19,30 +19,23 @@
                 SemanticProperties.HeadingLevel="Level1"
                 Text="Hjem" />
 
-            <Border
+            <Frame
                 Grid.Row="1"
-                Background="Pink"
-                HeightRequest="200"
-                Stroke="Black"
-                StrokeThickness="4">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="40" />
-                </Border.StrokeShape>
-                <StackLayout
-                    Grid.Row="1"
-                    Background="Pink"
-                    HeightRequest="200"
-                    IsClippedToBounds="True">
+                Background="{DynamicResource PrimaryColor}"
+                CornerRadius="10"
+                HeightRequest="200">
+                <StackLayout HorizontalOptions="Start" VerticalOptions="End">
                     <Label
-                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Restauranter"
+                        TextColor="White" />
+                    <Label
                         FontSize="18"
-                        HorizontalOptions="Center"
-                        SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                        SemanticProperties.HeadingLevel="Level1"
-                        Text="Welcome to .NET Multi-platform App UI" />
+                        Text="Sulten? Bestill fra dine favoritter"
+                        TextColor="White" />
                 </StackLayout>
-
-            </Border>
+            </Frame>
 
             <Label
                 x:Name="CounterLabel"
