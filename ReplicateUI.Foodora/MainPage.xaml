@@ -40,9 +40,25 @@
                     Text="🛒" />
             </Grid>
 
+            <Border
+                Grid.Row="1"
+                Padding="16,8"
+                Background="Gray"
+                HorizontalOptions="Center"
+                Stroke="{StaticResource PrimaryColor}"
+                StrokeThickness="4">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    Text="Søk etter butikker og restauranter"
+                    TextColor="White" />
+            </Border>
 
             <Frame
-                Grid.Row="1"
+                Grid.Row="2"
                 Background="{DynamicResource PrimaryColor}"
                 CornerRadius="10"
                 HeightRequest="200">
