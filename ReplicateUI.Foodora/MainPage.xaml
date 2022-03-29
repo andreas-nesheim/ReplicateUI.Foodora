@@ -1,50 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReplicateUI.Foodora.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
+<ContentPage
+    x:Class="ReplicateUI.Foodora.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
-              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <Grid
+            Padding="{OnPlatform iOS='30,60,30,30',
+                                 Default='30'}"
+            RowDefinitions="Auto,200,Auto,Auto,*"
+            RowSpacing="25">
 
-            <Label 
-                Text="Hello, World!"
+            <Label
                 Grid.Row="0"
-                SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label 
-                Text="Welcome to .NET Multi-platform App UI"
-                Grid.Row="1"
+                HorizontalOptions="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                Text="Hjem" />
 
-            <Label 
-                Text="Current count: 0"
-                Grid.Row="2"
-                FontSize="18"
-                FontAttributes="Bold"
+            <Border
+                Grid.Row="1"
+                Background="Pink"
+                HeightRequest="200"
+                Stroke="Black"
+                StrokeThickness="4">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40" />
+                </Border.StrokeShape>
+                <StackLayout
+                    Grid.Row="1"
+                    Background="Pink"
+                    HeightRequest="200"
+                    IsClippedToBounds="True">
+                    <Label
+                        Grid.Row="1"
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                        SemanticProperties.HeadingLevel="Level1"
+                        Text="Welcome to .NET Multi-platform App UI" />
+                </StackLayout>
+
+            </Border>
+
+            <Label
                 x:Name="CounterLabel"
-                HorizontalOptions="Center" />
-
-            <Button 
-                Text="Click me"
+                Grid.Row="2"
                 FontAttributes="Bold"
-                Grid.Row="3"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Current count: 0" />
 
-            <Image Grid.Row="4"
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                WidthRequest="250"
+            <Button
+                Grid.Row="3"
+                Clicked="OnCounterClicked"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
+
+            <Image
+                Grid.Row="4"
                 HeightRequest="310"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png"
+                WidthRequest="250" />
 
         </Grid>
     </ScrollView>
