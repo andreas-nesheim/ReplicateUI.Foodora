@@ -9,15 +9,37 @@
         <Grid
             Padding="{OnPlatform iOS='30,60,30,30',
                                  Default='30'}"
-            RowDefinitions="Auto,200,Auto,Auto,*"
+            RowDefinitions="Auto,Auto,Auto,Auto,*"
             RowSpacing="25">
 
-            <Label
+            <Grid
                 Grid.Row="0"
-                FontSize="32"
-                HorizontalOptions="Center"
-                SemanticProperties.HeadingLevel="Level1"
-                Text="Hjem" />
+                ColumnDefinitions="Auto,*,Auto,Auto"
+                ColumnSpacing="25">
+                <Label
+                    Grid.Column="0"
+                    FontSize="32"
+                    Text="🍔" />
+                <StackLayout Grid.Column="1">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Hjem" />
+                    <Label
+                        FontSize="18"
+                        Text="Marie Føreids vei 3B"
+                        TextColor="Black" />
+                </StackLayout>
+                <Label
+                    Grid.Column="2"
+                    FontSize="32"
+                    Text="❤️" />
+                <Label
+                    Grid.Column="3"
+                    FontSize="32"
+                    Text="🛒" />
+            </Grid>
+
 
             <Frame
                 Grid.Row="1"
