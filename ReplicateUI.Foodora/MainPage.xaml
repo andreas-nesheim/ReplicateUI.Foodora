@@ -26,7 +26,7 @@
                         FontSize="20"
                         Text="Hjem" />
                     <Label
-                        FontSize="18"
+                        FontSize="14"
                         Text="Marie Føreids vei 3B"
                         TextColor="Black" />
                 </StackLayout>
@@ -52,7 +52,7 @@
                 </Border.StrokeShape>
                 <Label
                     FontAttributes="Bold"
-                    FontSize="18"
+                    FontSize="16"
                     Text="Søk etter butikker og restauranter"
                     TextColor="White" />
             </Border>
@@ -75,21 +75,67 @@
                 </StackLayout>
             </Frame>
 
-            <Label
-                x:Name="CounterLabel"
-                Grid.Row="2"
-                FontAttributes="Bold"
-                FontSize="18"
-                HorizontalOptions="Center"
-                Text="Current count: 0" />
-
-            <Button
+            <Grid
                 Grid.Row="3"
-                Clicked="OnCounterClicked"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />
+                ColumnDefinitions="*,*"
+                ColumnSpacing="20"
+                HeightRequest="300"
+                RowDefinitions="2*,*"
+                RowSpacing="20">
+                <Frame
+                    Grid.RowSpan="2"
+                    Background="{DynamicResource PrimaryColor}"
+                    CornerRadius="10">
+                    <StackLayout VerticalOptions="End">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="foodora market"
+                            TextColor="White" />
+                        <Label
+                            FontSize="18"
+                            Text="Dagligvarer levert på minutter"
+                            TextColor="White" />
+                    </StackLayout>
+                </Frame>
+                <Frame
+                    Grid.Column="1"
+                    Background="{DynamicResource PrimaryColor}"
+                    CornerRadius="10">
+                    <StackLayout VerticalOptions="End">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Butikker"
+                            TextColor="White" />
+                        <Label
+                            FontSize="18"
+                            Text="Blomster, bøker og mye mer"
+                            TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Background="{DynamicResource PrimaryColor}"
+                    CornerRadius="10">
+                    <StackLayout>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Pick-up"
+                            TextColor="White" />
+                        <Label
+                            FontSize="18"
+                            Text="Hent maten sjæl"
+                            TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+
+
 
             <Image
                 Grid.Row="4"
