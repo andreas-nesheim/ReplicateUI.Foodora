@@ -45,7 +45,7 @@
                 Padding="16,8"
                 Background="#f7f7f7"
                 HorizontalOptions="Center"
-                Stroke="{StaticResource PrimaryColor}"
+                Stroke="#f7f7f7"
                 StrokeThickness="4">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10" />
