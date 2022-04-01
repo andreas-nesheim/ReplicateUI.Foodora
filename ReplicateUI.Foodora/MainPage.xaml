@@ -43,7 +43,7 @@
             <Border
                 Grid.Row="1"
                 Padding="16,8"
-                Background="Gray"
+                Background="#f7f7f7"
                 HorizontalOptions="Center"
                 Stroke="{StaticResource PrimaryColor}"
                 StrokeThickness="4">
@@ -53,8 +53,8 @@
                 <Label
                     FontAttributes="Bold"
                     FontSize="16"
-                    Text="Søk etter butikker og restauranter"
-                    TextColor="White" />
+                    Text="🔍 Søk etter butikker og restauranter"
+                    TextColor="#707070" />
             </Border>
 
             <Frame
@@ -134,16 +134,6 @@
                 </Frame>
 
             </Grid>
-
-
-
-            <Image
-                Grid.Row="4"
-                HeightRequest="310"
-                HorizontalOptions="Center"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                Source="dotnet_bot.png"
-                WidthRequest="250" />
 
         </Grid>
     </ScrollView>
