@@ -46,9 +46,9 @@
                 Background="#f7f7f7"
                 HorizontalOptions="Center"
                 Stroke="#f7f7f7"
-                StrokeThickness="4">
+                StrokeThickness="2">
                 <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="10" />
+                    <RoundRectangle CornerRadius="20" />
                 </Border.StrokeShape>
                 <Label
                     FontAttributes="Bold"
