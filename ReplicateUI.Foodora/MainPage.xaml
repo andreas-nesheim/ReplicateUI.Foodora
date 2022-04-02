@@ -3,6 +3,7 @@
     x:Class="ReplicateUI.Foodora.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:ReplicateUI.Foodora.Helpers"
     BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
@@ -16,10 +17,18 @@
                 Grid.Row="0"
                 ColumnDefinitions="Auto,*,Auto,Auto"
                 ColumnSpacing="25">
-                <Label
+                <Image
                     Grid.Column="0"
-                    FontSize="32"
-                    Text="🍔" />
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="IconFontTypes"
+                            Glyph="{x:Static helpers:IconFont.Menu}"
+                            Size="40"
+                            Color="{DynamicResource PrimaryColor}" />
+                    </Image.Source>
+                </Image>
                 <StackLayout Grid.Column="1">
                     <Label
                         FontAttributes="Bold"
@@ -30,14 +39,30 @@
                         Text="Marie Føreids vei 3B"
                         TextColor="Black" />
                 </StackLayout>
-                <Label
+                <Image
                     Grid.Column="2"
-                    FontSize="32"
-                    Text="❤️" />
-                <Label
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="IconFontTypes"
+                            Glyph="{x:Static helpers:IconFont.HeartOutline}"
+                            Size="40"
+                            Color="{DynamicResource PrimaryColor}" />
+                    </Image.Source>
+                </Image>
+                <Image
                     Grid.Column="3"
-                    FontSize="32"
-                    Text="🛒" />
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="IconFontTypes"
+                            Glyph="{x:Static helpers:IconFont.CartOutline}"
+                            Size="40"
+                            Color="{DynamicResource PrimaryColor}" />
+                    </Image.Source>
+                </Image>
             </Grid>
 
             <Border
