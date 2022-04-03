@@ -10,7 +10,7 @@
         <Grid
             Padding="{OnPlatform iOS='30,60,30,30',
                                  Default='30'}"
-            RowDefinitions="Auto,Auto,Auto,Auto,*"
+            RowDefinitions="Auto,Auto,Auto,Auto"
             RowSpacing="25">
 
             <Grid
