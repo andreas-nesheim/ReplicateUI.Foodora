@@ -94,7 +94,6 @@
                 Background="{DynamicResource PrimaryColor}"
                 CornerRadius="10"
                 HeightRequest="200">
-
                 <Grid>
                     <Image
                         HeightRequest="200"
@@ -116,7 +115,6 @@
                             TextColor="White" />
                     </StackLayout>
                 </Grid>
-
             </Frame>
 
             <Grid
@@ -158,7 +156,6 @@
                             TextColor="White" />
                     </StackLayout>
                 </Frame>
-
                 <Frame
                     Grid.Row="1"
                     Grid.Column="1"
@@ -176,9 +173,7 @@
                             TextColor="White" />
                     </StackLayout>
                 </Frame>
-
             </Grid>
-
         </Grid>
     </ScrollView>
 </ContentPage>
