@@ -75,11 +75,17 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20" />
                 </Border.StrokeShape>
-                <Label
-                    FontAttributes="Bold"
-                    FontSize="16"
-                    Text="🔍 Søk etter butikker og restauranter"
-                    TextColor="#707070" />
+                <Label TextColor="#707070">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                FontFamily="IconFontTypes"
+                                FontSize="26"
+                                Text="{x:Static helpers:IconFont.Magnify}" />
+                            <Span FontSize="16" Text=" Søk etter butikker og restauranter" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
             </Border>
 
             <Frame
