@@ -1,8 +1,8 @@
 ﻿namespace ReplicateUI.Foodora;
 
-public partial class MainPage : ContentPage
+public partial class Page1 : ContentPage
 {
-	public MainPage()
+	public Page1()
 	{
 		InitializeComponent();
 	}
