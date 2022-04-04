@@ -60,6 +60,18 @@
 	  <None Remove="Resources\Images\hamburger.png" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Page2.xaml.cs">
+	    <DependentUpon>Page2.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Page2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
