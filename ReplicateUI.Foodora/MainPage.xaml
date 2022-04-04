@@ -90,20 +90,31 @@
 
             <Frame
                 Grid.Row="2"
+                Padding="0"
                 Background="{DynamicResource PrimaryColor}"
                 CornerRadius="10"
                 HeightRequest="200">
-                <StackLayout HorizontalOptions="Start" VerticalOptions="End">
-                    <Label
-                        FontAttributes="Bold"
-                        FontSize="20"
-                        Text="Restauranter"
-                        TextColor="White" />
-                    <Label
-                        FontSize="18"
-                        Text="Sulten? Bestill fra dine favoritter"
-                        TextColor="White" />
-                </StackLayout>
+                <Grid>
+                    <Image
+                        HeightRequest="200"
+                        HorizontalOptions="End"
+                        Source="hamburger.png"
+                        WidthRequest="200" />
+                    <StackLayout
+                        Padding="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Restauranter"
+                            TextColor="White" />
+                        <Label
+                            FontSize="18"
+                            Text="Sulten? Bestill fra dine favoritter"
+                            TextColor="White" />
+                    </StackLayout>
+                </Grid>
             </Frame>
 
             <Grid
@@ -145,7 +156,6 @@
                             TextColor="White" />
                     </StackLayout>
                 </Frame>
-
                 <Frame
                     Grid.Row="1"
                     Grid.Column="1"
@@ -163,9 +173,7 @@
                             TextColor="White" />
                     </StackLayout>
                 </Frame>
-
             </Grid>
-
         </Grid>
     </ScrollView>
 </ContentPage>
