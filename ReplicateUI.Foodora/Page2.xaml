@@ -65,29 +65,41 @@
                 </Image>
             </Grid>
 
-            <Border
-                Grid.Row="1"
-                Padding="16,8"
-                Background="#f7f7f7"
-                HorizontalOptions="Center"
-                Stroke="#f7f7f7"
-                StrokeThickness="2">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="20" />
-                </Border.StrokeShape>
-                <Label TextColor="#707070">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span
-                                FontFamily="IconFontTypes"
-                                FontSize="26"
-                                Text="{x:Static helpers:IconFont.Magnify}" />
-                            <Span FontSize="16" Text=" Finn noe du liker" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
-
+            <Grid Grid.Row="1" ColumnDefinitions="*,40">
+                <Border
+                    Padding="16,8"
+                    Background="#f7f7f7"
+                    HorizontalOptions="Center"
+                    Stroke="#f7f7f7"
+                    StrokeThickness="2">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+                    <Label TextColor="#707070">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    FontFamily="IconFontTypes"
+                                    FontSize="26"
+                                    Text="{x:Static helpers:IconFont.Magnify}" />
+                                <Span FontSize="16" Text=" Finn noe du liker" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Border>
+                <Image
+                    Grid.Column="1"
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="IconFontTypes"
+                            Glyph="{x:Static helpers:IconFont.Tune}"
+                            Size="40"
+                            Color="{DynamicResource PrimaryColor}" />
+                    </Image.Source>
+                </Image>
+            </Grid>
 
         </Grid>
     </ScrollView>
