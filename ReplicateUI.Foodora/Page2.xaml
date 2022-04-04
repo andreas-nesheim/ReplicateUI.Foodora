@@ -24,7 +24,7 @@
                     <Image.Source>
                         <FontImageSource
                             FontFamily="IconFontTypes"
-                            Glyph="{x:Static helpers:IconFont.Menu}"
+                            Glyph="{x:Static helpers:IconFont.ArrowLeft}"
                             Size="40"
                             Color="{DynamicResource PrimaryColor}" />
                     </Image.Source>
@@ -36,7 +36,7 @@
                         Text="Hjem" />
                     <Label
                         FontSize="14"
-                        Text="Marie Føreids vei 3B"
+                        Text="Restaurantlevering"
                         TextColor="Black" />
                 </StackLayout>
                 <Image
@@ -82,98 +82,13 @@
                                 FontFamily="IconFontTypes"
                                 FontSize="26"
                                 Text="{x:Static helpers:IconFont.Magnify}" />
-                            <Span FontSize="16" Text=" Søk etter butikker og restauranter" />
+                            <Span FontSize="16" Text=" Finn noe du liker" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
             </Border>
 
-            <Frame
-                Grid.Row="2"
-                Padding="0"
-                Background="{DynamicResource PrimaryColor}"
-                CornerRadius="10"
-                HeightRequest="200">
-                <Grid>
-                    <Image
-                        HeightRequest="200"
-                        HorizontalOptions="End"
-                        Source="hamburger.png"
-                        WidthRequest="200" />
-                    <StackLayout
-                        Padding="20"
-                        HorizontalOptions="Start"
-                        VerticalOptions="End">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Restauranter"
-                            TextColor="White" />
-                        <Label
-                            FontSize="18"
-                            Text="Sulten? Bestill fra dine favoritter"
-                            TextColor="White" />
-                    </StackLayout>
-                </Grid>
-            </Frame>
 
-            <Grid
-                Grid.Row="3"
-                ColumnDefinitions="*,*"
-                ColumnSpacing="20"
-                HeightRequest="300"
-                RowDefinitions="2*,*"
-                RowSpacing="20">
-                <Frame
-                    Grid.RowSpan="2"
-                    Background="{DynamicResource PrimaryColor}"
-                    CornerRadius="10">
-                    <StackLayout VerticalOptions="End">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="foodora market"
-                            TextColor="White" />
-                        <Label
-                            FontSize="18"
-                            Text="Dagligvarer levert på minutter"
-                            TextColor="White" />
-                    </StackLayout>
-                </Frame>
-                <Frame
-                    Grid.Column="1"
-                    Background="{DynamicResource PrimaryColor}"
-                    CornerRadius="10">
-                    <StackLayout VerticalOptions="End">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Butikker"
-                            TextColor="White" />
-                        <Label
-                            FontSize="18"
-                            Text="Blomster, bøker og mye mer"
-                            TextColor="White" />
-                    </StackLayout>
-                </Frame>
-                <Frame
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Background="{DynamicResource PrimaryColor}"
-                    CornerRadius="10">
-                    <StackLayout>
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Pick-up"
-                            TextColor="White" />
-                        <Label
-                            FontSize="18"
-                            Text="Hent maten sjæl"
-                            TextColor="White" />
-                    </StackLayout>
-                </Frame>
-            </Grid>
         </Grid>
     </ScrollView>
 </ContentPage>
