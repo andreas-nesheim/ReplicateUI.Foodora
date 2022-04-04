@@ -75,7 +75,7 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="20" />
                     </Border.StrokeShape>
-                    <Label TextColor="#707070">
+                    <Label TextColor="#707070" WidthRequest="350">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span
