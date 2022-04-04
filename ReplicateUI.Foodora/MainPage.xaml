@@ -15,7 +15,7 @@
 
             <Grid
                 Grid.Row="0"
-                ColumnDefinitions="Auto,*,Auto,Auto"
+                ColumnDefinitions="40,*,40,40"
                 ColumnSpacing="25">
                 <Image
                     Grid.Column="0"
