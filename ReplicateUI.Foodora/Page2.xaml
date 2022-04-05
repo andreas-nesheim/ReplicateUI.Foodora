@@ -7,14 +7,11 @@
     BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid
-            Padding="{OnPlatform iOS='30,60,30,30',
-                                 Default='30'}"
-            RowDefinitions="Auto,Auto,Auto,Auto"
-            RowSpacing="25">
-
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="25">
             <Grid
                 Grid.Row="0"
+                Padding="{OnPlatform iOS='30,60,30,30',
+                                     Default='30,30,30,0'}"
                 ColumnDefinitions="40,*,40,40"
                 ColumnSpacing="25">
                 <Image
@@ -65,7 +62,11 @@
                 </Image>
             </Grid>
 
-            <Grid Grid.Row="1" ColumnDefinitions="*,40">
+            <Grid
+                Grid.Row="1"
+                Padding="{OnPlatform iOS='30,15,30,30',
+                                     Default='30,0'}"
+                ColumnDefinitions="*,40">
                 <Border
                     Padding="16,8"
                     Background="#f7f7f7"
@@ -100,6 +101,35 @@
                     </Image.Source>
                 </Image>
             </Grid>
+
+            <BoxView
+                Grid.Row="2"
+                BackgroundColor="White"
+                HeightRequest="30">
+                <BoxView.Shadow>
+                    <Shadow
+                        Brush="Black"
+                        Opacity="0.2"
+                        Radius="30"
+                        Offset="0,40" />
+                </BoxView.Shadow>
+            </BoxView>
+
+            <!--<Line
+                Grid.Row="3"
+                Stroke="Red"
+                X1="500"
+                X2="0"
+                Y1="0"
+                Y2="0">
+                <Line.Shadow>
+                    <Shadow
+                        Brush="Black"
+                        Opacity="0.2"
+                        Radius="20"
+                        Offset="0,30" />
+                </Line.Shadow>
+            </Line>-->
 
         </Grid>
     </ScrollView>
