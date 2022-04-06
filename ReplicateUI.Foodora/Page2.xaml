@@ -140,10 +140,11 @@
                 HeightRequest="200">
                 <Grid>
                     <Image
-                        HeightRequest="200"
+                        HeightRequest="170"
                         HorizontalOptions="End"
-                        Source="hamburger.png"
-                        WidthRequest="200" />
+                        Source="gratislevering.png"
+                        VerticalOptions="End"
+                        WidthRequest="220" />
                     <StackLayout Padding="20" HorizontalOptions="Start">
                         <StackLayout Orientation="Horizontal">
                             <Label
