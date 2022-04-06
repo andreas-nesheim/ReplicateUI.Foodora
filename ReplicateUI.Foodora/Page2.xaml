@@ -131,6 +131,50 @@
                 </Line.Shadow>
             </Line>-->
 
+
+            <Frame
+                Grid.Row="3"
+                Padding="0"
+                Background="{DynamicResource PrimaryColor}"
+                CornerRadius="10"
+                HeightRequest="200">
+                <Grid>
+                    <Image
+                        HeightRequest="200"
+                        HorizontalOptions="End"
+                        Source="hamburger.png"
+                        WidthRequest="200" />
+                    <StackLayout Padding="20" HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Margin="0,0,10,0"
+                                FontSize="20"
+                                Text="foodora"
+                                TextColor="White" />
+                            <Grid>
+                                <Polygon
+                                    Fill="White"
+                                    Points="5,10 65,10 60,24 0,24"
+                                    Stroke="White"
+                                    StrokeThickness="15" />
+                                <Label
+                                    FontAttributes="Italic"
+                                    FontSize="20"
+                                    HorizontalOptions="Start"
+                                    Text="market"
+                                    TextColor="{DynamicResource PrimaryColor}" />
+                            </Grid>
+                        </StackLayout>
+
+                        <Label
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            Text="Få dagligvarer på døra"
+                            TextColor="White" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
         </Grid>
     </ScrollView>
 </ContentPage>
