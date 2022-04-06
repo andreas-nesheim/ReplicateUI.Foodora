@@ -131,14 +131,18 @@
                 </Line.Shadow>
             </Line>-->
 
-            <CollectionView Grid.Row="3" ItemsLayout="HorizontalList">
+            <CollectionView Grid.Row="3">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="14" Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame
                             Padding="0"
                             Background="{DynamicResource PrimaryColor}"
                             CornerRadius="10"
-                            HeightRequest="200">
+                            HeightRequest="200"
+                            WidthRequest="400">
                             <Grid>
                                 <Image
                                     HeightRequest="170"
