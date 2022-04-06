@@ -158,7 +158,7 @@
                                     Stroke="White"
                                     StrokeThickness="15" />
                                 <Label
-                                    FontAttributes="Italic"
+                                    FontAttributes="Italic,Bold"
                                     FontSize="20"
                                     HorizontalOptions="Start"
                                     Text="market"
@@ -166,11 +166,29 @@
                             </Grid>
                         </StackLayout>
 
+                        <!--<Label
+                            Margin="0,10,0,0"
+                            Text="Få dagligvarer på døra"
+                            TextColor="White" />-->
                         <Label
                             Margin="0,10,0,0"
                             FontSize="22"
-                            Text="Få dagligvarer på døra"
+                            TextColor="White">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontSize="22" Text="Få " />
+                                    <Span
+                                        FontAttributes="Bold"
+                                        FontSize="22"
+                                        Text="dagligvarer" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label
+                            FontSize="22"
+                            Text="på døra"
                             TextColor="White" />
+
                     </StackLayout>
                 </Grid>
             </Frame>
