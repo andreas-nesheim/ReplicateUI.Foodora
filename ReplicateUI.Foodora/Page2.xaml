@@ -166,10 +166,6 @@
                             </Grid>
                         </StackLayout>
 
-                        <!--<Label
-                            Margin="0,10,0,0"
-                            Text="Få dagligvarer på døra"
-                            TextColor="White" />-->
                         <Label
                             Margin="0,10,0,0"
                             FontSize="22"
