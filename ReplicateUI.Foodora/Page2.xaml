@@ -185,6 +185,14 @@
                             Text="på døra"
                             TextColor="White" />
 
+                        <Frame
+                            Margin="0,10,0,0"
+                            Padding="15,5"
+                            CornerRadius="10"
+                            HorizontalOptions="Start">
+                            <Label FontAttributes="Bold" Text="bestill nå" />
+                        </Frame>
+
                     </StackLayout>
                 </Grid>
             </Frame>
