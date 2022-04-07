@@ -227,7 +227,7 @@
                 IsClippedToBounds="True"
                 WidthRequest="300">
 
-                <Grid HorizontalOptions="Start">
+                <Grid HorizontalOptions="Start" WidthRequest="300">
                     <Image
                         HeightRequest="200"
                         HorizontalOptions="Start"
@@ -249,6 +249,29 @@
                             Text="Pink Choice"
                             TextColor="White" />
                     </Border>
+
+                    <Border
+                        Margin="0,12,6,0"
+                        Padding="6"
+                        Background="White"
+                        HorizontalOptions="End"
+                        Stroke="White"
+                        StrokeThickness="0"
+                        VerticalOptions="Start">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="16" />
+                        </Border.StrokeShape>
+                        <ImageButton HeightRequest="16" WidthRequest="16">
+                            <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="IconFontTypes"
+                                    Glyph="{x:Static helpers:IconFont.HeartOutline}"
+                                    Size="16"
+                                    Color="Black" />
+                            </ImageButton.Source>
+                        </ImageButton>
+                    </Border>
+
                 </Grid>
 
             </Frame>
