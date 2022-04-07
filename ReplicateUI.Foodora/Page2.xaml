@@ -205,7 +205,7 @@
                 </CarouselView.ItemsSource>-->
 
             </CarouselView>
-            <!--<IndicatorView x:Name="indicatorView"/>-->
+            <IndicatorView x:Name="indicatorView" />
 
         </Grid>
     </ScrollView>
