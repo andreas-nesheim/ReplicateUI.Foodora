@@ -272,6 +272,23 @@
                         </ImageButton>
                     </Border>
 
+                    <Border
+                        Margin="12,0,0,12"
+                        Padding="10,6"
+                        Background="White"
+                        HorizontalOptions="Start"
+                        Stroke="White"
+                        StrokeThickness="0"
+                        VerticalOptions="End">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="20 min"
+                            TextColor="Black" />
+                    </Border>
+
                 </Grid>
 
             </Frame>
