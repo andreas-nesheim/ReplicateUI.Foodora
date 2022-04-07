@@ -116,7 +116,6 @@
             </BoxView>
 
             <CarouselView Grid.Row="3" ItemsSource="{Binding Items}">
-
                 <!--  WSA doesn't want to run when defining a CarouselView ItemTemplate...  -->
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -205,7 +204,7 @@
                 </CarouselView.ItemsSource>-->
 
             </CarouselView>
-            <IndicatorView x:Name="indicatorView" />
+            <IndicatorView x:Name="indicatorView" Grid.Row="4" />
 
         </Grid>
     </ScrollView>
