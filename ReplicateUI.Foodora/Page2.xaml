@@ -7,7 +7,7 @@
     BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="25">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
             <Grid
                 Grid.Row="0"
                 Padding="{OnPlatform iOS='30,60,30,30',
@@ -115,8 +115,10 @@
                 </BoxView.Shadow>
             </BoxView>
 
-            <CarouselView Grid.Row="3" ItemsSource="{Binding Items}">
-                <!--  WSA doesn't want to run when defining a CarouselView ItemTemplate...  -->
+            <!--<CarouselView Grid.Row="3" ItemsSource="{Binding Items}">
+            -->
+            <!--  WSA doesn't want to run when defining a CarouselView ItemTemplate...  -->
+            <!--
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
@@ -191,7 +193,8 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
 
-                <!--<CarouselView.ItemsSource>
+            -->
+            <!--<CarouselView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>mono</x:String>
                         <x:String>monodroid</x:String>
@@ -202,9 +205,31 @@
                         <x:String>monopoly</x:String>
                     </x:Array>
                 </CarouselView.ItemsSource>-->
+            <!--
 
             </CarouselView>
-            <IndicatorView x:Name="indicatorView" Grid.Row="4" />
+            <IndicatorView x:Name="indicatorView" Grid.Row="4" />-->
+
+            <Label
+                Grid.Row="5"
+                Padding="20"
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Dine restauranter 😍"
+                TextColor="Black" />
+
+            <Frame
+                Grid.Row="6"
+                Padding="0"
+                CornerRadius="10"
+                HeightRequest="200"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                WidthRequest="300">
+
+                <Image Source="cheeseburger.jpg" />
+
+            </Frame>
 
         </Grid>
     </ScrollView>
