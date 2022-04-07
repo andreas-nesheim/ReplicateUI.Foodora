@@ -227,7 +227,29 @@
                 IsClippedToBounds="True"
                 WidthRequest="300">
 
-                <Image Source="cheeseburger.jpg" />
+                <Grid HorizontalOptions="Start">
+                    <Image
+                        HeightRequest="200"
+                        HorizontalOptions="Start"
+                        Source="cheeseburger.jpg"
+                        WidthRequest="300" />
+                    <Border
+                        Margin="0,12,0,0"
+                        Padding="10,6"
+                        Background="{DynamicResource PrimaryColor}"
+                        HorizontalOptions="Start"
+                        Stroke="{DynamicResource PrimaryColor}"
+                        StrokeThickness="0"
+                        VerticalOptions="Start">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="0,10,0,10" />
+                        </Border.StrokeShape>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="Pink Choice"
+                            TextColor="White" />
+                    </Border>
+                </Grid>
 
             </Frame>
 
