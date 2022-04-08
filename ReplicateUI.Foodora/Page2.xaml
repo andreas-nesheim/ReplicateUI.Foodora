@@ -218,80 +218,113 @@
                 Text="Dine restauranter 😍"
                 TextColor="Black" />
 
-            <Frame
-                Grid.Row="6"
-                Padding="0"
-                CornerRadius="10"
-                HeightRequest="200"
-                HorizontalOptions="Start"
-                IsClippedToBounds="True"
-                WidthRequest="300">
+            <StackLayout Grid.Row="6" Padding="20">
+                <Frame
+                    Padding="0"
+                    CornerRadius="10"
+                    HeightRequest="200"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    WidthRequest="300">
 
-                <Grid HorizontalOptions="Start" WidthRequest="300">
-                    <Image
-                        HeightRequest="200"
-                        HorizontalOptions="Start"
-                        Source="cheeseburger.jpg"
-                        WidthRequest="300" />
-                    <Border
-                        Margin="0,12,0,0"
-                        Padding="10,6"
-                        Background="{DynamicResource PrimaryColor}"
-                        HorizontalOptions="Start"
-                        Stroke="{DynamicResource PrimaryColor}"
-                        StrokeThickness="0"
-                        VerticalOptions="Start">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="0,10,0,10" />
-                        </Border.StrokeShape>
+                    <Grid HorizontalOptions="Start" WidthRequest="300">
+                        <Image
+                            HeightRequest="200"
+                            HorizontalOptions="Start"
+                            Source="cheeseburger.jpg"
+                            WidthRequest="300" />
+                        <Border
+                            Margin="0,12,0,0"
+                            Padding="10,6"
+                            Background="{DynamicResource PrimaryColor}"
+                            HorizontalOptions="Start"
+                            Stroke="{DynamicResource PrimaryColor}"
+                            StrokeThickness="0"
+                            VerticalOptions="Start">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="0,10,0,10" />
+                            </Border.StrokeShape>
+                            <Label
+                                FontAttributes="Bold"
+                                Text="Pink Choice"
+                                TextColor="White" />
+                        </Border>
+
+                        <Border
+                            Margin="0,12,6,0"
+                            Padding="6"
+                            Background="White"
+                            HorizontalOptions="End"
+                            Stroke="White"
+                            StrokeThickness="0"
+                            VerticalOptions="Start">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="16" />
+                            </Border.StrokeShape>
+                            <ImageButton HeightRequest="16" WidthRequest="16">
+                                <ImageButton.Source>
+                                    <FontImageSource
+                                        FontFamily="IconFontTypes"
+                                        Glyph="{x:Static helpers:IconFont.HeartOutline}"
+                                        Size="16"
+                                        Color="Black" />
+                                </ImageButton.Source>
+                            </ImageButton>
+                        </Border>
+
+                        <Border
+                            Margin="12,0,0,12"
+                            Padding="10,6"
+                            Background="White"
+                            HorizontalOptions="Start"
+                            Stroke="White"
+                            StrokeThickness="0"
+                            VerticalOptions="End">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <Label
+                                FontAttributes="Bold"
+                                Text="20 min"
+                                TextColor="Black" />
+                        </Border>
+
+                    </Grid>
+
+                </Frame>
+                <StackLayout WidthRequest="300">
+                    <StackLayout
+                        Padding="0,10,0,0"
+                        Orientation="Horizontal"
+                        Spacing="6">
                         <Label
                             FontAttributes="Bold"
-                            Text="Pink Choice"
-                            TextColor="White" />
-                    </Border>
-
-                    <Border
-                        Margin="0,12,6,0"
-                        Padding="6"
-                        Background="White"
-                        HorizontalOptions="End"
-                        Stroke="White"
-                        StrokeThickness="0"
-                        VerticalOptions="Start">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="16" />
-                        </Border.StrokeShape>
-                        <ImageButton HeightRequest="16" WidthRequest="16">
-                            <ImageButton.Source>
+                            Text="Hekkan Burger - Stavan..."
+                            TextColor="Black" />
+                        <Image
+                            Grid.Column="0"
+                            HeightRequest="20"
+                            WidthRequest="20">
+                            <Image.Source>
                                 <FontImageSource
                                     FontFamily="IconFontTypes"
-                                    Glyph="{x:Static helpers:IconFont.HeartOutline}"
-                                    Size="16"
-                                    Color="Black" />
-                            </ImageButton.Source>
-                        </ImageButton>
-                    </Border>
-
-                    <Border
-                        Margin="12,0,0,12"
-                        Padding="10,6"
-                        Background="White"
-                        HorizontalOptions="Start"
-                        Stroke="White"
-                        StrokeThickness="0"
-                        VerticalOptions="End">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="20" />
-                        </Border.StrokeShape>
+                                    Glyph="{x:Static helpers:IconFont.Star}"
+                                    Size="20"
+                                    Color="Blue" />
+                            </Image.Source>
+                        </Image>
                         <Label
                             FontAttributes="Bold"
-                            Text="20 min"
+                            Text="4,4"
                             TextColor="Black" />
-                    </Border>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="(3k+)"
+                            TextColor="Gray" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
 
-                </Grid>
-
-            </Frame>
 
         </Grid>
     </ScrollView>
