@@ -293,17 +293,15 @@
 
                 </Frame>
                 <StackLayout WidthRequest="300">
-                    <StackLayout
-                        Padding="0,10,0,0"
-                        Orientation="Horizontal"
-                        Spacing="6">
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
                         <Label
                             FontAttributes="Bold"
-                            Text="Hekkan Burger - Stavan..."
+                            Text="Hekkan Burger - Stavanger"
                             TextColor="Black" />
                         <Image
                             Grid.Column="0"
                             HeightRequest="20"
+                            HorizontalOptions="EndAndExpand"
                             WidthRequest="20">
                             <Image.Source>
                                 <FontImageSource
@@ -314,11 +312,14 @@
                             </Image.Source>
                         </Image>
                         <Label
+                            Padding="6,0"
                             FontAttributes="Bold"
+                            HorizontalOptions="End"
                             Text="4,4"
                             TextColor="Black" />
                         <Label
                             FontAttributes="Bold"
+                            HorizontalOptions="End"
                             Text="(3k+)"
                             TextColor="Gray" />
                     </StackLayout>
