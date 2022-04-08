@@ -323,6 +323,28 @@
                             Text="(3k+)"
                             TextColor="Gray" />
                     </StackLayout>
+                    <Label
+                        Padding="0,6,0,0"
+                        FontAttributes="Bold"
+                        Text="$$$ • Burger, Glutenfri, Burgertorsdag"
+                        TextColor="Gray" />
+                    <StackLayout Padding="0,6,0,0" Orientation="Horizontal">
+                        <Image HeightRequest="20" WidthRequest="20">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="IconFontTypes"
+                                    Glyph="{x:Static helpers:IconFont.Moped}"
+                                    Size="20"
+                                    Color="{DynamicResource PrimaryColor}" />
+                            </Image.Source>
+                        </Image>
+                        <Label
+                            Padding="10,0,0,0"
+                            FontAttributes="Bold"
+                            Text="gratis levering"
+                            TextColor="{DynamicResource PrimaryColor}" />
+                    </StackLayout>
+
                 </StackLayout>
             </StackLayout>
 
