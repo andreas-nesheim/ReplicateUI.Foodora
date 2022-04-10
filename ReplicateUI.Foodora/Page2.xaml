@@ -223,7 +223,6 @@
                                 HorizontalOptions="Start"
                                 IsClippedToBounds="True"
                                 WidthRequest="300">
-
                                 <Grid HorizontalOptions="Start" WidthRequest="300">
                                     <Image
                                         HeightRequest="200"
@@ -246,7 +245,6 @@
                                             Text="Pink Choice"
                                             TextColor="White" />
                                     </Border>
-
                                     <Border
                                         Margin="0,12,6,0"
                                         Padding="6"
@@ -268,7 +266,6 @@
                                             </ImageButton.Source>
                                         </ImageButton>
                                     </Border>
-
                                     <Border
                                         Margin="12,0,0,12"
                                         Padding="10,6"
@@ -285,9 +282,7 @@
                                             Text="20 min"
                                             TextColor="Black" />
                                     </Border>
-
                                 </Grid>
-
                             </Frame>
                             <StackLayout WidthRequest="300">
                                 <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
@@ -341,10 +336,8 @@
                                         Text="gratis levering"
                                         TextColor="{DynamicResource PrimaryColor}" />
                                 </StackLayout>
-
                             </StackLayout>
                         </StackLayout>
-
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
 
