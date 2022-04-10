@@ -115,7 +115,7 @@
                 </BoxView.Shadow>
             </BoxView>
 
-            <CarouselView Grid.Row="3" ItemsSource="{Binding Items}">
+            <CarouselView Grid.Row="3" IndicatorView="indicatorView">
 
                 <!--  WSA doesn't want to run when defining a CarouselView ItemTemplate...  -->
 
@@ -193,17 +193,17 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
 
-                <!--<CarouselView.ItemsSource>
+                <CarouselView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>mono</x:String>
-                        <x:String>monodroid</x:String>
-                        <x:String>monotouch</x:String>
-                        <x:String>monorail</x:String>
-                        <x:String>monodevelop</x:String>
-                        <x:String>monotone</x:String>
-                        <x:String>monopoly</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
                     </x:Array>
-                </CarouselView.ItemsSource>-->
+                </CarouselView.ItemsSource>
 
             </CarouselView>
 
