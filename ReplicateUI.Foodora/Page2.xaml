@@ -117,7 +117,7 @@
 
             <CarouselView Grid.Row="3" IndicatorView="indicatorView">
 
-                <!--  WSA doesn't want to run when defining a CarouselView ItemTemplate...  -->
+                <!--  WSA doesn't want to run when defining an ItemTemplate...  -->
 
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
@@ -156,7 +156,6 @@
                                                     TextColor="{DynamicResource PrimaryColor}" />
                                             </Grid>
                                         </StackLayout>
-
                                         <Label
                                             Margin="0,10,0,0"
                                             FontSize="22"
@@ -175,7 +174,6 @@
                                             FontSize="22"
                                             Text="på døra"
                                             TextColor="White" />
-
                                         <Frame
                                             Margin="0,10,0,0"
                                             Padding="15,5"
@@ -183,13 +181,10 @@
                                             HorizontalOptions="Start">
                                             <Label FontAttributes="Bold" Text="bestill nå" />
                                         </Frame>
-
                                     </StackLayout>
                                 </Grid>
                             </Frame>
-
                         </StackLayout>
-
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
 
@@ -355,9 +350,9 @@
 
                 <CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>mono</x:String>
-                        <x:String>monodroid</x:String>
-                        <x:String>monotouch</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
+                        <x:String>test</x:String>
                     </x:Array>
                 </CollectionView.ItemsSource>
 
