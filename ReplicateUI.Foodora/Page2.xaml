@@ -215,7 +215,7 @@
             <CollectionView Grid.Row="6" ItemsLayout="HorizontalList">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Grid.Row="6" Padding="20">
+                        <StackLayout Padding="20">
                             <Frame
                                 Padding="0"
                                 CornerRadius="10"
