@@ -8,19 +8,56 @@
 
     <ScrollView>
         <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
-            <Frame
+            <!--<Frame
                 Grid.Row="0"
                 Padding="0"
                 Background="Red"
                 HeightRequest="260"
                 IsClippedToBounds="True"
+                WidthRequest="400">-->
+            <Image
+                Aspect="AspectFill"
+                HeightRequest="260"
+                Source="cheeseburger.jpg"
                 WidthRequest="400">
-                <Image
-                    Aspect="AspectFill"
-                    HeightRequest="260"
-                    Source="cheeseburger.jpg"
-                    WidthRequest="400" />
-            </Frame>
+                <Image.Clip>
+
+                    <EllipseGeometry
+                        Center="300,300"
+                        RadiusX="160"
+                        RadiusY="160" />
+
+                    <!--<PathGeometry>
+                        <PathFigure IsClosed="True" StartPoint="10,100">
+                            <PathFigure.Segments>
+                                <PathSegmentCollection>
+                                    <LineSegment Point="100,100" />
+                                    <LineSegment Point="100,50" />
+                                </PathSegmentCollection>
+                            </PathFigure.Segments>
+                        </PathFigure>
+                    </PathGeometry>-->
+
+                    <!--<PathGeometry Figures="M 10,100 L 100,100 100,50Z"/>-->
+
+                    <!--<PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure IsClosed="True" StartPoint="10,100">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <LineSegment Point="100,100" />
+                                            <LineSegment Point="100,50" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>-->
+
+                </Image.Clip>
+            </Image>
+            <!--</Frame>-->
 
             <BoxView
                 Grid.Row="2"
