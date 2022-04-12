@@ -56,23 +56,64 @@
                         </PathGeometry.Figures>
                     </PathGeometry>-->
 
-                    <PathGeometry>
+                    <!--<PathGeometry FillRule="EvenOdd">
                         <PathGeometry.Figures>
                             <PathFigureCollection>
-                                <PathFigure StartPoint="10,10">
+                                <PathFigure IsClosed="True" StartPoint="0,0">
                                     <PathFigure.Segments>
                                         <PathSegmentCollection>
-                                            <!--<LineSegment Point="100,10" />
-                                            <LineSegment Point="100,100" />
-                                            <LineSegment Point="10,100" />
-                                            <LineSegment Point="10,10" />-->
-                                            <QuadraticBezierSegment Point1="500,200" Point2="1000,10" />
+                                            <LineSegment Point="1000,0" />
+                                            <LineSegment Point="1000,500" />
+                                            <LineSegment Point="0,500" />
+
+                                            <LineSegment Point="0,0" />
+                    -->
+                    <!--<LineSegment Point="0,0" />
+                                            <LineSegment Point="0,500" />-->
+                    <!--<QuadraticBezierSegment Point1="500,700" Point2="1000,500" />-->
+                    <!--
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                                <PathFigure IsClosed="True" StartPoint="0,500">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <QuadraticBezierSegment Point1="500,700" Point2="1000,500" />
                                         </PathSegmentCollection>
                                     </PathFigure.Segments>
                                 </PathFigure>
                             </PathFigureCollection>
                         </PathGeometry.Figures>
-                    </PathGeometry>
+                    </PathGeometry>-->
+
+                    <!--<PathGeometry FillRule="Nonzero">
+                        <PathGeometry.Figures>
+                            <PathFigure StartPoint="0,500">
+                                <PathFigure.Segments>
+                                    <LineSegment Point="0,0" />
+                                    <LineSegment Point="1000,0" />
+                                    <LineSegment Point="1000,500" />
+                                    <LineSegment Point="0,500" />
+
+                    -->
+                    <!--<LineSegment Point="0,0" />
+                                    <LineSegment Point="0,500" />-->
+                    <!--
+
+                                    <QuadraticBezierSegment Point1="500,700" Point2="1000,500" />
+                                </PathFigure.Segments>
+                            </PathFigure>
+
+                        </PathGeometry.Figures>
+                    </PathGeometry>-->
+
+                    <GeometryGroup>
+                        <RectangleGeometry Rect="0,0,1100,500" />
+                        <EllipseGeometry
+                            Center="550,500"
+                            RadiusX="550"
+                            RadiusY="60" />
+                    </GeometryGroup>
 
                     <!--<PathGeometry>
                         <PathGeometry.Figures>
