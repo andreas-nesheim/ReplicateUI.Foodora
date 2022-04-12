@@ -22,13 +22,34 @@
                 WidthRequest="400">
                 <Image.Clip>
 
-                    <EllipseGeometry
+                    <!--<EllipseGeometry
                         Center="300,300"
                         RadiusX="160"
-                        RadiusY="160" />
+                        RadiusY="160" />-->
+
+                    <!--<RectangleGeometry Rect="10,10,450,400" />-->
+
+                    <!--<GeometryGroup>
+                        <EllipseGeometry RadiusX="100"
+                             RadiusY="100"
+                             Center="150,150" />
+                        <EllipseGeometry RadiusX="100"
+                             RadiusY="100"
+                             Center="250,150" />
+                        <EllipseGeometry RadiusX="100"
+                             RadiusY="100"
+                             Center="150,250" />
+                        <EllipseGeometry RadiusX="100"
+                             RadiusY="100"
+                             Center="250,250" />
+                    </GeometryGroup>-->
+
+                    <!--<RoundRectangleGeometry CornerRadius="5" Rect="10,10,150,100" />-->
+
+                    <!--<PathGeometry Figures="M 10,100 L 100,100 100,50Z" />-->
 
                     <!--<PathGeometry>
-                        <PathFigure IsClosed="True" StartPoint="10,100">
+                        <PathFigure StartPoint="10,100">
                             <PathFigure.Segments>
                                 <PathSegmentCollection>
                                     <LineSegment Point="100,100" />
@@ -38,12 +59,46 @@
                         </PathFigure>
                     </PathGeometry>-->
 
-                    <!--<PathGeometry Figures="M 10,100 L 100,100 100,50Z"/>-->
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="10,10">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <BezierSegment
+                                                Point1="100,0"
+                                                Point2="200,200"
+                                                Point3="300,10" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
 
                     <!--<PathGeometry>
                         <PathGeometry.Figures>
                             <PathFigureCollection>
-                                <PathFigure IsClosed="True" StartPoint="10,100">
+                                <PathFigure StartPoint="10,10">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <ArcSegment
+                                                IsLargeArc="True"
+                                                Point="200,100"
+                                                RotationAngle="45"
+                                                Size="100,50"
+                                                SweepDirection="CounterClockwise" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>-->
+
+                    <!--<PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="10,100">
                                     <PathFigure.Segments>
                                         <PathSegmentCollection>
                                             <LineSegment Point="100,100" />
@@ -58,6 +113,29 @@
                 </Image.Clip>
             </Image>
             <!--</Frame>-->
+
+            <Path Grid.Row="1" Stroke="Black">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="10,10">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <ArcSegment
+                                                IsLargeArc="True"
+                                                Point="200,100"
+                                                RotationAngle="45"
+                                                Size="100,50"
+                                                SweepDirection="CounterClockwise" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
 
             <BoxView
                 Grid.Row="2"
