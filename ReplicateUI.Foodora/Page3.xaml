@@ -40,17 +40,6 @@
                     <!--<RoundRectangleGeometry CornerRadius="5" Rect="10,10,150,100" />-->
 
                     <!--<PathGeometry>
-                        <PathFigure StartPoint="10,100">
-                            <PathFigure.Segments>
-                                <PathSegmentCollection>
-                                    <LineSegment Point="100,100" />
-                                    <LineSegment Point="100,50" />
-                                </PathSegmentCollection>
-                            </PathFigure.Segments>
-                        </PathFigure>
-                    </PathGeometry>-->
-
-                    <PathGeometry>
                         <PathGeometry.Figures>
                             <PathFigureCollection>
                                 <PathFigure StartPoint="10,10">
@@ -60,6 +49,24 @@
                                                 Point1="100,0"
                                                 Point2="200,200"
                                                 Point3="300,10" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>-->
+
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="10,10">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <!--<LineSegment Point="100,10" />
+                                            <LineSegment Point="100,100" />
+                                            <LineSegment Point="10,100" />
+                                            <LineSegment Point="10,10" />-->
+                                            <QuadraticBezierSegment Point1="500,200" Point2="1000,10" />
                                         </PathSegmentCollection>
                                     </PathFigure.Segments>
                                 </PathFigure>
@@ -89,11 +96,13 @@
                     <!--<PathGeometry>
                         <PathGeometry.Figures>
                             <PathFigureCollection>
-                                <PathFigure StartPoint="10,100">
+                                <PathFigure StartPoint="10,10">
                                     <PathFigure.Segments>
                                         <PathSegmentCollection>
+                                            <LineSegment Point="100,10" />
                                             <LineSegment Point="100,100" />
-                                            <LineSegment Point="100,50" />
+                                            <LineSegment Point="10,100" />
+                                            <LineSegment Point="10,10" />
                                         </PathSegmentCollection>
                                     </PathFigure.Segments>
                                 </PathFigure>
