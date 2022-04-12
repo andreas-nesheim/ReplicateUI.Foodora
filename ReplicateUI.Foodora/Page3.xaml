@@ -8,13 +8,6 @@
 
     <ScrollView>
         <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
-            <!--<Frame
-                Grid.Row="0"
-                Padding="0"
-                Background="Red"
-                HeightRequest="260"
-                IsClippedToBounds="True"
-                WidthRequest="400">-->
             <Image
                 Aspect="AspectFill"
                 HeightRequest="260"
@@ -45,8 +38,6 @@
                     </GeometryGroup>-->
 
                     <!--<RoundRectangleGeometry CornerRadius="5" Rect="10,10,150,100" />-->
-
-                    <!--<PathGeometry Figures="M 10,100 L 100,100 100,50Z" />-->
 
                     <!--<PathGeometry>
                         <PathFigure StartPoint="10,100">
@@ -112,51 +103,6 @@
 
                 </Image.Clip>
             </Image>
-            <!--</Frame>-->
-
-            <Path Grid.Row="1" Stroke="Black">
-                <Path.Data>
-                    <PathGeometry>
-                        <PathGeometry.Figures>
-                            <PathFigureCollection>
-                                <PathFigure StartPoint="10,10">
-                                    <PathFigure.Segments>
-                                        <PathSegmentCollection>
-                                            <ArcSegment
-                                                IsLargeArc="True"
-                                                Point="200,100"
-                                                RotationAngle="45"
-                                                Size="100,50"
-                                                SweepDirection="CounterClockwise" />
-                                        </PathSegmentCollection>
-                                    </PathFigure.Segments>
-                                </PathFigure>
-                            </PathFigureCollection>
-                        </PathGeometry.Figures>
-                    </PathGeometry>
-                </Path.Data>
-            </Path>
-
-            <BoxView
-                Grid.Row="2"
-                BackgroundColor="White"
-                HeightRequest="30">
-                <BoxView.Shadow>
-                    <Shadow
-                        Brush="Black"
-                        Opacity="0.2"
-                        Radius="30"
-                        Offset="0,40" />
-                </BoxView.Shadow>
-            </BoxView>
-
-            <Label
-                Grid.Row="5"
-                Padding="20"
-                FontAttributes="Bold"
-                FontSize="20"
-                Text="Dine restauranter 😍"
-                TextColor="Black" />
 
         </Grid>
     </ScrollView>
