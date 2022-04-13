@@ -15,11 +15,11 @@
                 WidthRequest="400">
                 <Image.Clip>
                     <GeometryGroup>
-                        <RectangleGeometry Rect="0,0,1100,500" />
+                        <RectangleGeometry Rect="0,0,400,180" />
                         <EllipseGeometry
-                            Center="550,500"
-                            RadiusX="550"
-                            RadiusY="60" />
+                            Center="20,20"
+                            RadiusX="210"
+                            RadiusY="110" />
                     </GeometryGroup>
                 </Image.Clip>
             </Image>
