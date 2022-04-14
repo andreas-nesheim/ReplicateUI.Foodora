@@ -15,11 +15,12 @@
                 WidthRequest="400">
                 <Image.Clip>
                     <GeometryGroup>
-                        <RectangleGeometry Rect="0,0,400,180" />
+                        <RectangleGeometry Rect="0,0,400,100" />
+                        <!--  Center property does not seem to work (as of RC1)  -->
                         <EllipseGeometry
-                            Center="20,20"
-                            RadiusX="210"
-                            RadiusY="110" />
+                            Center="100,100"
+                            RadiusX="200"
+                            RadiusY="100" />
                     </GeometryGroup>
                 </Image.Clip>
             </Image>
