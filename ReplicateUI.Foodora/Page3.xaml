@@ -109,51 +109,11 @@
                         TextColor="{DynamicResource PrimaryColor}" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Spacing="10">
-                    <Image HeightRequest="16" WidthRequest="16">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.Star}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
-                    <Image HeightRequest="16" WidthRequest="16">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.Star}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
-                    <Image HeightRequest="16" WidthRequest="16">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.Star}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
-                    <Image HeightRequest="16" WidthRequest="16">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.Star}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
-                    <Image HeightRequest="16" WidthRequest="16">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.StarOutline}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
+                    <Image Style="{StaticResource StarImageStyle}" />
+                    <Image Style="{StaticResource StarImageStyle}" />
+                    <Image Style="{StaticResource StarImageStyle}" />
+                    <Image Style="{StaticResource StarImageStyle}" />
+                    <Image Style="{StaticResource StarOutlineImageStyle}" />
                     <Label Text="3k+ anmeldelser" TextColor="Gray" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
