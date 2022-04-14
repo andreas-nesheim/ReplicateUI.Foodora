@@ -8,6 +8,7 @@
 
     <ScrollView>
         <Grid RowDefinitions="260,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
+            <!--  Top section  -->
             <Grid>
                 <Image
                     Aspect="AspectFill"
@@ -90,6 +91,72 @@
                 </Border>
             </Grid>
 
+            <!--  Info section  -->
+            <VerticalStackLayout
+                Grid.Row="1"
+                Padding="20,0"
+                Spacing="10">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    Text="Hekkan Burger - Stavanger"
+                    TextColor="Black" />
+                <HorizontalStackLayout>
+                    <Label Text="1,9km unna | 150,00 NOK minimum" TextColor="Gray" />
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Mer info"
+                        TextColor="{DynamicResource PrimaryColor}" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10">
+                    <Image HeightRequest="16" WidthRequest="16">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.Star}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Image HeightRequest="16" WidthRequest="16">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.Star}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Image HeightRequest="16" WidthRequest="16">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.Star}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Image HeightRequest="16" WidthRequest="16">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.Star}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Image HeightRequest="16" WidthRequest="16">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.StarOutline}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Label Text="3k+ anmeldelser" TextColor="Gray" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>
