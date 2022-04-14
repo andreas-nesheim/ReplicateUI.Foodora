@@ -8,22 +8,88 @@
 
     <ScrollView>
         <Grid RowDefinitions="260,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
-            <Image
-                Aspect="AspectFill"
-                HeightRequest="260"
-                Source="cheeseburger.jpg"
-                WidthRequest="400">
-                <Image.Clip>
-                    <GeometryGroup>
-                        <RectangleGeometry Rect="0,0,400,100" />
-                        <!--  Center property does not seem to work (as of RC1)  -->
-                        <EllipseGeometry
-                            Center="100,100"
-                            RadiusX="200"
-                            RadiusY="100" />
-                    </GeometryGroup>
-                </Image.Clip>
-            </Image>
+            <Grid>
+                <Image
+                    Aspect="AspectFill"
+                    HeightRequest="260"
+                    Source="cheeseburger.jpg"
+                    WidthRequest="400">
+                    <Image.Clip>
+                        <GeometryGroup>
+                            <RectangleGeometry Rect="0,0,400,100" />
+                            <!--  Center property does not seem to work (as of RC1)  -->
+                            <EllipseGeometry
+                                Center="100,100"
+                                RadiusX="200"
+                                RadiusY="100" />
+                        </GeometryGroup>
+                    </Image.Clip>
+                </Image>
+                <Border
+                    Margin="10,12,0,0"
+                    Padding="6"
+                    Background="White"
+                    HorizontalOptions="Start"
+                    Stroke="White"
+                    StrokeThickness="0"
+                    VerticalOptions="Start">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+                    <ImageButton HeightRequest="16" WidthRequest="16">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.ArrowLeft}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                </Border>
+                <Border
+                    Margin="0,12,50,0"
+                    Padding="6"
+                    Background="White"
+                    HorizontalOptions="End"
+                    Stroke="White"
+                    StrokeThickness="0"
+                    VerticalOptions="Start">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+                    <ImageButton HeightRequest="16" WidthRequest="16">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.AccountGroup}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                </Border>
+                <Border
+                    Margin="0,12,10,0"
+                    Padding="6"
+                    Background="White"
+                    HorizontalOptions="End"
+                    Stroke="White"
+                    StrokeThickness="0"
+                    VerticalOptions="Start">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+                    <ImageButton HeightRequest="16" WidthRequest="16">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.ShareVariant}"
+                                Size="16"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                </Border>
+            </Grid>
+
         </Grid>
     </ScrollView>
 </ContentPage>
