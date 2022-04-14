@@ -7,7 +7,7 @@
     BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
+        <Grid RowDefinitions="260,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25">
             <Image
                 Aspect="AspectFill"
                 HeightRequest="260"
