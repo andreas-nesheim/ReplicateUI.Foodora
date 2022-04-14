@@ -101,20 +101,27 @@
                     FontSize="20"
                     Text="Hekkan Burger - Stavanger"
                     TextColor="Black" />
-                <HorizontalStackLayout>
+                <Grid ColumnDefinitions="*,*">
                     <Label Text="1,9km unna | 150,00 NOK minimum" TextColor="Gray" />
+                    <!--  Need a margin here because the Grid isn't properly spaced for some reason  -->
                     <Label
+                        Grid.Column="1"
+                        Margin="0,0,40,0"
                         FontAttributes="Bold"
+                        HorizontalOptions="End"
                         Text="Mer info"
                         TextColor="{DynamicResource PrimaryColor}" />
-                </HorizontalStackLayout>
-                <HorizontalStackLayout Spacing="10">
+                </Grid>
+                <HorizontalStackLayout>
                     <Image Style="{StaticResource StarImageStyle}" />
                     <Image Style="{StaticResource StarImageStyle}" />
                     <Image Style="{StaticResource StarImageStyle}" />
                     <Image Style="{StaticResource StarImageStyle}" />
                     <Image Style="{StaticResource StarOutlineImageStyle}" />
-                    <Label Text="3k+ anmeldelser" TextColor="Gray" />
+                    <Label
+                        Margin="10,0,0,0"
+                        Text="3k+ anmeldelser"
+                        TextColor="Gray" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Grid>
