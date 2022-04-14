@@ -123,6 +123,30 @@
                         Text="3k+ anmeldelser"
                         TextColor="Gray" />
                 </HorizontalStackLayout>
+                <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
+                    <Image HeightRequest="24" WidthRequest="24">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="IconFontTypes"
+                                Glyph="{x:Static helpers:IconFont.ClockOutline}"
+                                Size="24"
+                                Color="{DynamicResource PrimaryColor}" />
+                        </Image.Source>
+                    </Image>
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Levering: mandag, apr. 11 (14:30)"
+                        TextColor="Black" />
+                    <Label
+                        Grid.Column="2"
+                        Margin="0,0,40,0"
+                        FontAttributes="Bold"
+                        HorizontalOptions="End"
+                        Text="Endre"
+                        TextColor="{DynamicResource PrimaryColor}" />
+                </Grid>
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
