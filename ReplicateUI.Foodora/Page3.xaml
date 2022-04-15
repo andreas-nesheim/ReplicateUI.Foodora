@@ -162,6 +162,15 @@
                         FontAttributes="Bold"
                         Text="Populær"
                         VerticalOptions="Center" />
+                    <Line
+                        Grid.Column="1"
+                        Stroke="Red"
+                        StrokeLineCap="Round"
+                        StrokeThickness="10"
+                        X1="0"
+                        X2="56"
+                        Y1="0"
+                        Y2="0" />
                     <Label
                         Grid.Column="2"
                         FontAttributes="Bold"
