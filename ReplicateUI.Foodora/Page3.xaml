@@ -201,6 +201,7 @@
                 </BoxView.Shadow>
             </BoxView>
 
+            <!--  Dishes section  -->
             <VerticalStackLayout
                 Grid.Row="3"
                 Padding="10"
