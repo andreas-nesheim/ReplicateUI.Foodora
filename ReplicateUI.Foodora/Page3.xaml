@@ -219,21 +219,21 @@
                     Text="Mest bestilt akkurat nå"
                     TextColor="Black" />
 
-                <CollectionView Grid.Row="6" ItemsLayout="HorizontalList">
+                <CollectionView Grid.Row="6" ItemsLayout="VerticalGrid, 2">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Padding="20">
+                            <StackLayout Padding="0,10,10,10">
                                 <Frame
                                     Padding="0"
                                     CornerRadius="10"
-                                    HeightRequest="200"
+                                    HeightRequest="180"
                                     HorizontalOptions="Start"
                                     IsClippedToBounds="True"
-                                    WidthRequest="300">
-                                    <Grid HorizontalOptions="Start" WidthRequest="300">
+                                    WidthRequest="170">
+                                    <Grid HorizontalOptions="Start" WidthRequest="170">
                                         <Image
-                                            HeightRequest="200"
-                                            HorizontalOptions="Start"
+                                            HeightRequest="180"
+                                            HorizontalOptions="Center"
                                             Source="cheeseburger.jpg"
                                             WidthRequest="300" />
                                         <Label
@@ -266,6 +266,7 @@
 
                     <CollectionView.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
+                            <x:String>test</x:String>
                             <x:String>test</x:String>
                             <x:String>test</x:String>
                             <x:String>test</x:String>
