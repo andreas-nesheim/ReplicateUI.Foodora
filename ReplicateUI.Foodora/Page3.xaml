@@ -94,6 +94,7 @@
             <!--  Info section  -->
             <VerticalStackLayout
                 Grid.Row="1"
+                Margin="0,-50,0,0"
                 Padding="20,0"
                 Spacing="10">
                 <Label
@@ -205,6 +206,7 @@
             <!--  Dishes section  -->
             <VerticalStackLayout
                 Grid.Row="3"
+                Margin="0,-30,0,0"
                 Padding="10"
                 Spacing="10">
                 <HorizontalStackLayout>
