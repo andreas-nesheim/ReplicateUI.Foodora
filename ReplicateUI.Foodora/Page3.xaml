@@ -147,7 +147,50 @@
                         Text="Endre"
                         TextColor="{DynamicResource PrimaryColor}" />
                 </Grid>
+                <Grid ColumnDefinitions="*,*,*,*">
+                    <Border
+                        Background="LightGray"
+                        Stroke="White"
+                        StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="60" />
+                        </Border.StrokeShape>
+                        <SearchBar Placeholder="Søk" />
+                    </Border>
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        Text="Populær"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        Text="15% rabatt"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="3"
+                        FontAttributes="Bold"
+                        Text="Meny"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </Grid>
             </VerticalStackLayout>
+
+            <BoxView
+                Grid.Row="2"
+                Margin="0,-80,0,0"
+                BackgroundColor="White"
+                HeightRequest="30"
+                ZIndex="-1">
+                <BoxView.Shadow>
+                    <Shadow
+                        Brush="Black"
+                        Opacity="0.2"
+                        Radius="30"
+                        Offset="0,40" />
+                </BoxView.Shadow>
+            </BoxView>
         </Grid>
     </ScrollView>
 </ContentPage>
