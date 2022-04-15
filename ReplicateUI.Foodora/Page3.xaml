@@ -236,17 +236,12 @@
                                             HorizontalOptions="Start"
                                             Source="cheeseburger.jpg"
                                             WidthRequest="300" />
-                                        <Border
-                                            Margin="0,12,0,0"
-                                            Padding="10,6"
-                                            HorizontalOptions="Start"
-                                            VerticalOptions="Start">
-                                            <Label
-                                                FontAttributes="Bold"
-                                                FontSize="16"
-                                                Text="1. Dirty Menu"
-                                                TextColor="White" />
-                                        </Border>
+                                        <Label
+                                            Margin="12,12,0,0"
+                                            FontAttributes="Bold"
+                                            FontSize="16"
+                                            Text="1. Dirty Menu"
+                                            TextColor="White" />
                                         <Border
                                             Margin="0,0,12,12"
                                             Padding="10,10"
