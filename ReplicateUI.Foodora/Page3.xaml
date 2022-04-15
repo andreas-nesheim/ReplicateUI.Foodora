@@ -244,12 +244,12 @@
                                             <Label
                                                 FontAttributes="Bold"
                                                 FontSize="16"
-                                                Text="1. Pink Choice"
+                                                Text="1. Dirty Menu"
                                                 TextColor="White" />
                                         </Border>
                                         <Border
                                             Margin="0,0,12,12"
-                                            Padding="10,6"
+                                            Padding="10,10"
                                             Background="White"
                                             HorizontalOptions="End"
                                             Stroke="White"
@@ -260,7 +260,7 @@
                                             </Border.StrokeShape>
                                             <Label
                                                 FontAttributes="Bold"
-                                                Text="20 min"
+                                                Text="212,00 NOK"
                                                 TextColor="Black" />
                                         </Border>
                                     </Grid>
