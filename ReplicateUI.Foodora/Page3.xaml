@@ -218,6 +218,146 @@
                     FontSize="16"
                     Text="Mest bestilt akkurat nå"
                     TextColor="Black" />
+
+                <CollectionView Grid.Row="6" ItemsLayout="HorizontalList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="20">
+                                <Frame
+                                    Padding="0"
+                                    CornerRadius="10"
+                                    HeightRequest="200"
+                                    HorizontalOptions="Start"
+                                    IsClippedToBounds="True"
+                                    WidthRequest="300">
+                                    <Grid HorizontalOptions="Start" WidthRequest="300">
+                                        <Image
+                                            HeightRequest="200"
+                                            HorizontalOptions="Start"
+                                            Source="cheeseburger.jpg"
+                                            WidthRequest="300" />
+                                        <Border
+                                            Margin="0,12,0,0"
+                                            Padding="10,6"
+                                            Background="{DynamicResource PrimaryColor}"
+                                            HorizontalOptions="Start"
+                                            Stroke="{DynamicResource PrimaryColor}"
+                                            StrokeThickness="0"
+                                            VerticalOptions="Start">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="0,10,0,10" />
+                                            </Border.StrokeShape>
+                                            <Label
+                                                FontAttributes="Bold"
+                                                Text="Pink Choice"
+                                                TextColor="White" />
+                                        </Border>
+                                        <Border
+                                            Margin="0,12,6,0"
+                                            Padding="6"
+                                            Background="White"
+                                            HorizontalOptions="End"
+                                            Stroke="White"
+                                            StrokeThickness="0"
+                                            VerticalOptions="Start">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="16" />
+                                            </Border.StrokeShape>
+                                            <ImageButton HeightRequest="16" WidthRequest="16">
+                                                <ImageButton.Source>
+                                                    <FontImageSource
+                                                        FontFamily="IconFontTypes"
+                                                        Glyph="{x:Static helpers:IconFont.HeartOutline}"
+                                                        Size="16"
+                                                        Color="Black" />
+                                                </ImageButton.Source>
+                                            </ImageButton>
+                                        </Border>
+                                        <Border
+                                            Margin="12,0,0,12"
+                                            Padding="10,6"
+                                            Background="White"
+                                            HorizontalOptions="Start"
+                                            Stroke="White"
+                                            StrokeThickness="0"
+                                            VerticalOptions="End">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="20" />
+                                            </Border.StrokeShape>
+                                            <Label
+                                                FontAttributes="Bold"
+                                                Text="20 min"
+                                                TextColor="Black" />
+                                        </Border>
+                                    </Grid>
+                                </Frame>
+                                <StackLayout WidthRequest="300">
+                                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            Text="Hekkan Burger - Stavanger"
+                                            TextColor="Black" />
+                                        <Image
+                                            Grid.Column="0"
+                                            HeightRequest="20"
+                                            HorizontalOptions="EndAndExpand"
+                                            WidthRequest="20">
+                                            <Image.Source>
+                                                <FontImageSource
+                                                    FontFamily="IconFontTypes"
+                                                    Glyph="{x:Static helpers:IconFont.Star}"
+                                                    Size="20"
+                                                    Color="Blue" />
+                                            </Image.Source>
+                                        </Image>
+                                        <Label
+                                            Padding="6,0"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="End"
+                                            Text="4,4"
+                                            TextColor="Black" />
+                                        <Label
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="End"
+                                            Text="(3k+)"
+                                            TextColor="Gray" />
+                                    </StackLayout>
+                                    <Label
+                                        Padding="0,6,0,0"
+                                        FontAttributes="Bold"
+                                        Text="$$$ • Burger, Glutenfri, Burgertorsdag"
+                                        TextColor="Gray" />
+                                    <StackLayout Padding="0,6,0,0" Orientation="Horizontal">
+                                        <Image HeightRequest="20" WidthRequest="20">
+                                            <Image.Source>
+                                                <FontImageSource
+                                                    FontFamily="IconFontTypes"
+                                                    Glyph="{x:Static helpers:IconFont.Moped}"
+                                                    Size="20"
+                                                    Color="{DynamicResource PrimaryColor}" />
+                                            </Image.Source>
+                                        </Image>
+                                        <Label
+                                            Padding="10,0,0,0"
+                                            FontAttributes="Bold"
+                                            Text="gratis levering"
+                                            TextColor="{DynamicResource PrimaryColor}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>test</x:String>
+                            <x:String>test</x:String>
+                            <x:String>test</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+
+                </CollectionView>
+
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
