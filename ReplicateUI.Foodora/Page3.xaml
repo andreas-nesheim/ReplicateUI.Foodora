@@ -200,6 +200,24 @@
                         Offset="0,40" />
                 </BoxView.Shadow>
             </BoxView>
+
+            <VerticalStackLayout
+                Grid.Row="3"
+                Padding="10"
+                Spacing="10">
+                <HorizontalStackLayout>
+                    <Label FontSize="28" Text="🔥" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="28"
+                        Text="Populær"
+                        TextColor="Black" />
+                </HorizontalStackLayout>
+                <Label
+                    FontSize="16"
+                    Text="Mest bestilt akkurat nå"
+                    TextColor="Black" />
+            </VerticalStackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>
