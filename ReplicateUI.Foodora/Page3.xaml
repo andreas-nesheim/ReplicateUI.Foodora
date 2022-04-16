@@ -78,11 +78,11 @@
                         TextColor="{DynamicResource PrimaryColor}" />
                 </Grid>
                 <HorizontalStackLayout>
-                    <Image Style="{StaticResource StarImageStyle}" />
-                    <Image Style="{StaticResource StarImageStyle}" />
-                    <Image Style="{StaticResource StarImageStyle}" />
-                    <Image Style="{StaticResource StarImageStyle}" />
-                    <Image Style="{StaticResource StarOutlineImageStyle}" />
+                    <Label Style="{StaticResource StarLabelStyle}" />
+                    <Label Style="{StaticResource StarLabelStyle}" />
+                    <Label Style="{StaticResource StarLabelStyle}" />
+                    <Label Style="{StaticResource StarLabelStyle}" />
+                    <Label Style="{StaticResource StarOutlineLabelStyle}" />
                     <Label
                         Margin="10,0,0,0"
                         Text="3k+ anmeldelser"
