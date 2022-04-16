@@ -74,8 +74,7 @@
                         Margin="0,0,40,0"
                         FontAttributes="Bold"
                         HorizontalOptions="End"
-                        Text="Mer info"
-                        TextColor="{DynamicResource PrimaryColor}" />
+                        Text="Mer info" />
                 </Grid>
                 <HorizontalStackLayout>
                     <Label Style="{StaticResource StarLabelStyle}" />
@@ -104,8 +103,7 @@
                         Margin="0,0,40,0"
                         FontAttributes="Bold"
                         HorizontalOptions="End"
-                        Text="Endre"
-                        TextColor="{DynamicResource PrimaryColor}" />
+                        Text="Endre" />
                 </Grid>
                 <Grid ColumnDefinitions="*,*,*,*">
                     <Border
@@ -122,6 +120,7 @@
                         FontAttributes="Bold"
                         Text="Populær"
                         VerticalOptions="Center" />
+                    <!--  Not working on Android for some reason..  -->
                     <Line
                         Grid.Column="1"
                         Stroke="Red"
