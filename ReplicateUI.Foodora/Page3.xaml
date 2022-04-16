@@ -28,15 +28,8 @@
                 </Image>
                 <Border
                     Margin="10,12,0,0"
-                    Padding="6"
-                    Background="White"
                     HorizontalOptions="Start"
-                    Stroke="White"
-                    StrokeThickness="0"
-                    VerticalOptions="Start">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="60" />
-                    </Border.StrokeShape>
+                    Style="{StaticResource FontIconWithRoundedCornersStyle}">
                     <Label
                         FontFamily="IconFontTypes"
                         FontSize="30"
@@ -44,15 +37,8 @@
                 </Border>
                 <Border
                     Margin="0,12,60,0"
-                    Padding="6"
-                    Background="White"
                     HorizontalOptions="End"
-                    Stroke="White"
-                    StrokeThickness="0"
-                    VerticalOptions="Start">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="60" />
-                    </Border.StrokeShape>
+                    Style="{StaticResource FontIconWithRoundedCornersStyle}">
                     <Label
                         FontFamily="IconFontTypes"
                         FontSize="30"
@@ -60,15 +46,8 @@
                 </Border>
                 <Border
                     Margin="0,12,10,0"
-                    Padding="6"
-                    Background="White"
                     HorizontalOptions="End"
-                    Stroke="White"
-                    StrokeThickness="0"
-                    VerticalOptions="Start">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="60" />
-                    </Border.StrokeShape>
+                    Style="{StaticResource FontIconWithRoundedCornersStyle}">
                     <Label
                         FontFamily="IconFontTypes"
                         FontSize="30"

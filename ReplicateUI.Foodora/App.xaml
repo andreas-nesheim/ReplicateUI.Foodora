@@ -52,6 +52,19 @@
                 </Setter>
             </Style>
 
+            <Style x:Key="FontIconWithRoundedCornersStyle" TargetType="Border">
+                <Setter Property="Padding" Value="6" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Stroke" Value="White" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <RoundRectangle CornerRadius="60" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
