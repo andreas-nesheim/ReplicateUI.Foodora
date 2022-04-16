@@ -35,20 +35,15 @@
                     StrokeThickness="0"
                     VerticalOptions="Start">
                     <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="16" />
+                        <RoundRectangle CornerRadius="60" />
                     </Border.StrokeShape>
-                    <ImageButton HeightRequest="16" WidthRequest="16">
-                        <ImageButton.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.ArrowLeft}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </ImageButton.Source>
-                    </ImageButton>
+                    <Label
+                        FontFamily="IconFontTypes"
+                        FontSize="30"
+                        Text="{x:Static helpers:IconFont.ArrowLeft}" />
                 </Border>
                 <Border
-                    Margin="0,12,50,0"
+                    Margin="0,12,60,0"
                     Padding="6"
                     Background="White"
                     HorizontalOptions="End"
@@ -56,17 +51,12 @@
                     StrokeThickness="0"
                     VerticalOptions="Start">
                     <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="16" />
+                        <RoundRectangle CornerRadius="60" />
                     </Border.StrokeShape>
-                    <ImageButton HeightRequest="16" WidthRequest="16">
-                        <ImageButton.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.AccountGroup}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </ImageButton.Source>
-                    </ImageButton>
+                    <Label
+                        FontFamily="IconFontTypes"
+                        FontSize="30"
+                        Text="{x:Static helpers:IconFont.AccountGroupOutline}" />
                 </Border>
                 <Border
                     Margin="0,12,10,0"
@@ -77,17 +67,12 @@
                     StrokeThickness="0"
                     VerticalOptions="Start">
                     <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="16" />
+                        <RoundRectangle CornerRadius="60" />
                     </Border.StrokeShape>
-                    <ImageButton HeightRequest="16" WidthRequest="16">
-                        <ImageButton.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.ShareVariant}"
-                                Size="16"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </ImageButton.Source>
-                    </ImageButton>
+                    <Label
+                        FontFamily="IconFontTypes"
+                        FontSize="30"
+                        Text="{x:Static helpers:IconFont.ShareVariantOutline}" />
                 </Border>
             </Grid>
 
@@ -210,7 +195,10 @@
                 Padding="10"
                 Spacing="10">
                 <HorizontalStackLayout>
-                    <Label FontSize="28" Text="🔥" />
+                    <Label
+                        FontFamily="IconFontTypes"
+                        FontSize="28"
+                        Text="{x:Static helpers:IconFont.ShareVariant}" />
                     <Label
                         FontAttributes="Bold"
                         FontSize="28"
