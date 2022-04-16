@@ -89,15 +89,10 @@
                         TextColor="Gray" />
                 </HorizontalStackLayout>
                 <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
-                    <Image HeightRequest="24" WidthRequest="24">
-                        <Image.Source>
-                            <FontImageSource
-                                FontFamily="IconFontTypes"
-                                Glyph="{x:Static helpers:IconFont.ClockOutline}"
-                                Size="24"
-                                Color="{DynamicResource PrimaryColor}" />
-                        </Image.Source>
-                    </Image>
+                    <Label
+                        FontFamily="IconFontTypes"
+                        FontSize="24"
+                        Text="{x:Static helpers:IconFont.ClockOutline}" />
                     <Label
                         Grid.Column="1"
                         FontAttributes="Bold"
@@ -177,7 +172,8 @@
                     <Label
                         FontFamily="IconFontTypes"
                         FontSize="28"
-                        Text="{x:Static helpers:IconFont.ShareVariant}" />
+                        Text="{x:Static helpers:IconFont.Fire}"
+                        VerticalOptions="Center" />
                     <Label
                         FontAttributes="Bold"
                         FontSize="28"
