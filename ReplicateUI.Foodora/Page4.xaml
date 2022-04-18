@@ -67,13 +67,11 @@
 
                 <Label Text="Klassiker med ost, tomat, syltet rødløk, isbergsalat og Hekkans burgerdressing." TextColor="Gray" />
 
+                <!--  Line will not show unless it has a non-zero Y2 value  -->
                 <Line
                     Stroke="Gray"
-                    StrokeThickness="2"
-                    X1="0"
-                    X2="330"
-                    Y1="0"
-                    Y2="4" />
+                    X2="350"
+                    Y2="1" />
 
                 <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
                     <Label
@@ -95,22 +93,6 @@
                 </Grid>
                 <Grid />
             </VerticalStackLayout>
-
-            <!--  Shadow section  -->
-            <BoxView
-                Grid.Row="2"
-                Margin="0,-80,0,0"
-                BackgroundColor="White"
-                HeightRequest="30"
-                ZIndex="-1">
-                <BoxView.Shadow>
-                    <Shadow
-                        Brush="Black"
-                        Opacity="0.2"
-                        Radius="30"
-                        Offset="0,40" />
-                </BoxView.Shadow>
-            </BoxView>
 
             <!--  Dishes section  -->
             <VerticalStackLayout
