@@ -43,12 +43,37 @@
                 Margin="0,-50,0,0"
                 Padding="20,0"
                 Spacing="10">
-                <Label
-                    FontAttributes="Bold"
-                    FontSize="20"
-                    Text="1. Burgler"
-                    TextColor="Black" />
+                <Grid ColumnDefinitions="140,*,70" ColumnSpacing="10">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="1. Burgler"
+                        TextColor="Black" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        HorizontalOptions="End"
+                        Text="fra 129,00 NOK"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="2"
+                        FontFamily="IconFontTypes"
+                        FontSize="24"
+                        Text="{x:Static helpers:IconFont.InformationOutline}"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+                </Grid>
+
                 <Label Text="Klassiker med ost, tomat, syltet rødløk, isbergsalat og Hekkans burgerdressing." TextColor="Gray" />
+
+                <Line
+                    Stroke="Gray"
+                    StrokeThickness="2"
+                    X1="0"
+                    X2="330"
+                    Y1="0"
+                    Y2="4" />
 
                 <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
                     <Label
@@ -68,16 +93,7 @@
                         HorizontalOptions="End"
                         Text="Endre" />
                 </Grid>
-                <Grid>
-                    <Line
-                        Stroke="Red"
-                        StrokeLineCap="Round"
-                        StrokeThickness="10"
-                        X1="0"
-                        X2="56"
-                        Y1="0"
-                        Y2="0" />
-                </Grid>
+                <Grid />
             </VerticalStackLayout>
 
             <!--  Shadow section  -->
