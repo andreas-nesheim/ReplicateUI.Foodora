@@ -35,24 +35,6 @@
                         FontSize="30"
                         Text="{x:Static helpers:IconFont.ArrowLeft}" />
                 </Border>
-                <Border
-                    Margin="0,12,60,0"
-                    HorizontalOptions="End"
-                    Style="{StaticResource FontIconWithRoundedCornersStyle}">
-                    <Label
-                        FontFamily="IconFontTypes"
-                        FontSize="30"
-                        Text="{x:Static helpers:IconFont.AccountGroupOutline}" />
-                </Border>
-                <Border
-                    Margin="0,12,10,0"
-                    HorizontalOptions="End"
-                    Style="{StaticResource FontIconWithRoundedCornersStyle}">
-                    <Label
-                        FontFamily="IconFontTypes"
-                        FontSize="30"
-                        Text="{x:Static helpers:IconFont.ShareVariantOutline}" />
-                </Border>
             </Grid>
 
             <!--  Info section  -->
@@ -64,29 +46,10 @@
                 <Label
                     FontAttributes="Bold"
                     FontSize="20"
-                    Text="Hekkan Burger - Stavanger"
+                    Text="1. Burgler"
                     TextColor="Black" />
-                <Grid ColumnDefinitions="*,*">
-                    <Label Text="1,9km unna | 150,00 NOK minimum" TextColor="Gray" />
-                    <!--  Need a margin here because the Grid isn't properly spaced for some reason  -->
-                    <Label
-                        Grid.Column="1"
-                        Margin="0,0,40,0"
-                        FontAttributes="Bold"
-                        HorizontalOptions="End"
-                        Text="Mer info" />
-                </Grid>
-                <HorizontalStackLayout>
-                    <Label Style="{StaticResource StarLabelStyle}" />
-                    <Label Style="{StaticResource StarLabelStyle}" />
-                    <Label Style="{StaticResource StarLabelStyle}" />
-                    <Label Style="{StaticResource StarLabelStyle}" />
-                    <Label Style="{StaticResource StarOutlineLabelStyle}" />
-                    <Label
-                        Margin="10,0,0,0"
-                        Text="3k+ anmeldelser"
-                        TextColor="Gray" />
-                </HorizontalStackLayout>
+                <Label Text="Klassiker med ost, tomat, syltet rødløk, isbergsalat og Hekkans burgerdressing." TextColor="Gray" />
+
                 <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
                     <Label
                         FontFamily="IconFontTypes"
@@ -105,24 +68,8 @@
                         HorizontalOptions="End"
                         Text="Endre" />
                 </Grid>
-                <Grid ColumnDefinitions="*,*,*,*">
-                    <Border
-                        Background="LightGray"
-                        Stroke="White"
-                        StrokeThickness="0">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="60" />
-                        </Border.StrokeShape>
-                        <SearchBar Placeholder="Søk" />
-                    </Border>
-                    <Label
-                        Grid.Column="1"
-                        FontAttributes="Bold"
-                        Text="Populær"
-                        VerticalOptions="Center" />
-                    <!--  Not working on Android for some reason..  -->
+                <Grid>
                     <Line
-                        Grid.Column="1"
                         Stroke="Red"
                         StrokeLineCap="Round"
                         StrokeThickness="10"
@@ -130,18 +77,6 @@
                         X2="56"
                         Y1="0"
                         Y2="0" />
-                    <Label
-                        Grid.Column="2"
-                        FontAttributes="Bold"
-                        Text="15% rabatt"
-                        TextColor="Black"
-                        VerticalOptions="Center" />
-                    <Label
-                        Grid.Column="3"
-                        FontAttributes="Bold"
-                        Text="Meny"
-                        TextColor="Black"
-                        VerticalOptions="Center" />
                 </Grid>
             </VerticalStackLayout>
 
@@ -183,63 +118,6 @@
                     FontSize="16"
                     Text="Mest bestilt akkurat nå"
                     TextColor="Black" />
-
-                <CollectionView Grid.Row="6" ItemsLayout="VerticalGrid, 2">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Padding="0,10,10,10">
-                                <Frame
-                                    Padding="0"
-                                    CornerRadius="10"
-                                    HeightRequest="180"
-                                    HorizontalOptions="Start"
-                                    IsClippedToBounds="True"
-                                    WidthRequest="170">
-                                    <Grid HorizontalOptions="Start" WidthRequest="170">
-                                        <Image
-                                            HeightRequest="180"
-                                            HorizontalOptions="Center"
-                                            Source="cheeseburger.jpg"
-                                            WidthRequest="300" />
-                                        <Label
-                                            Margin="12,12,0,0"
-                                            FontAttributes="Bold"
-                                            FontSize="16"
-                                            Text="1. Dirty Menu"
-                                            TextColor="White" />
-                                        <Border
-                                            Margin="0,0,12,12"
-                                            Padding="10,10"
-                                            Background="White"
-                                            HorizontalOptions="End"
-                                            Stroke="White"
-                                            StrokeThickness="0"
-                                            VerticalOptions="End">
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="60" />
-                                            </Border.StrokeShape>
-                                            <Label
-                                                FontAttributes="Bold"
-                                                Text="212,00 NOK"
-                                                TextColor="Black" />
-                                        </Border>
-                                    </Grid>
-                                </Frame>
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-
-                    <CollectionView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>test</x:String>
-                            <x:String>test</x:String>
-                            <x:String>test</x:String>
-                            <x:String>test</x:String>
-                        </x:Array>
-                    </CollectionView.ItemsSource>
-
-                </CollectionView>
-
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
