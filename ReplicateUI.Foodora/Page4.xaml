@@ -73,50 +73,41 @@
                     X2="350"
                     Y2="1" />
 
-                <Grid Margin="0,20,0,0" ColumnDefinitions="40,*,90">
+                <Grid
+                    Margin="0,20,0,0"
+                    ColumnDefinitions="*,*"
+                    RowDefinitions="*,*">
                     <Label
-                        FontFamily="IconFontTypes"
-                        FontSize="24"
-                        Text="{x:Static helpers:IconFont.ClockOutline}" />
-                    <Label
-                        Grid.Column="1"
                         FontAttributes="Bold"
-                        FontSize="16"
-                        Text="Levering: mandag, apr. 11 (14:30)"
+                        FontSize="18"
+                        Text="Variasjon"
                         TextColor="Black" />
-                    <Label
-                        Grid.Column="2"
-                        Margin="0,0,40,0"
-                        FontAttributes="Bold"
+                    <Border
+                        Grid.Column="1"
+                        Margin="0,0,30,0"
+                        Padding="10,6"
+                        Background="LightBlue"
                         HorizontalOptions="End"
-                        Text="Endre" />
+                        Stroke="LightBlue"
+                        StrokeThickness="0"
+                        VerticalOptions="End">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="60" />
+                        </Border.StrokeShape>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="1 Kreves"
+                            TextColor="Black" />
+                    </Border>
+                    <Label
+                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Velg en"
+                        TextColor="Gray" />
                 </Grid>
-                <Grid />
             </VerticalStackLayout>
 
-            <!--  Dishes section  -->
-            <VerticalStackLayout
-                Grid.Row="3"
-                Margin="0,-30,0,0"
-                Padding="10"
-                Spacing="10">
-                <HorizontalStackLayout>
-                    <Label
-                        FontFamily="IconFontTypes"
-                        FontSize="28"
-                        Text="{x:Static helpers:IconFont.Fire}"
-                        VerticalOptions="Center" />
-                    <Label
-                        FontAttributes="Bold"
-                        FontSize="28"
-                        Text="Populær"
-                        TextColor="Black" />
-                </HorizontalStackLayout>
-                <Label
-                    FontSize="16"
-                    Text="Mest bestilt akkurat nå"
-                    TextColor="Black" />
-            </VerticalStackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>
