@@ -108,12 +108,11 @@
                 </Grid>
 
                 <Grid
-                    Margin="0,20,0,0"
-                    ColumnDefinitions="*,*,*"
+                    Margin="0,20,40,0"
+                    ColumnDefinitions="50,*,*"
                     RowDefinitions="*,*"
-                    RowSpacing="14">
-
-                    <RadioButton Background="Red" GroupName="RadioGroup" />
+                    RowSpacing="16">
+                    <RadioButton GroupName="RadioGroup" />
                     <Label
                         Grid.Column="1"
                         Text="Enkel"
@@ -121,10 +120,10 @@
                         VerticalOptions="Center" />
                     <Label
                         Grid.Column="2"
+                        HorizontalOptions="End"
                         Text="129,00 NOK"
                         TextColor="Black"
                         VerticalOptions="Center" />
-
                     <RadioButton Grid.Row="1" GroupName="RadioGroup" />
                     <Label
                         Grid.Row="1"
@@ -135,10 +134,10 @@
                     <Label
                         Grid.Row="1"
                         Grid.Column="2"
+                        HorizontalOptions="End"
                         Text="159,00 NOK"
                         TextColor="Black"
                         VerticalOptions="Center" />
-
                 </Grid>
 
             </VerticalStackLayout>
