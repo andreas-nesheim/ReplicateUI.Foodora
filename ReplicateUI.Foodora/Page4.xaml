@@ -86,9 +86,9 @@
                         Grid.Column="1"
                         Margin="0,0,30,0"
                         Padding="10,6"
-                        Background="LightBlue"
+                        Background="#eff4fa"
                         HorizontalOptions="End"
-                        Stroke="LightBlue"
+                        Stroke="#eff4fa"
                         StrokeThickness="0"
                         VerticalOptions="End">
                         <Border.StrokeShape>
@@ -97,7 +97,7 @@
                         <Label
                             FontAttributes="Bold"
                             Text="1 Kreves"
-                            TextColor="Black" />
+                            TextColor="#2770bf" />
                     </Border>
                     <Label
                         Grid.Row="1"
@@ -153,9 +153,9 @@
                         Grid.Column="1"
                         Margin="0,0,30,0"
                         Padding="10,6"
-                        Background="LightBlue"
+                        Background="#ebebeb"
                         HorizontalOptions="End"
-                        Stroke="LightBlue"
+                        Stroke="#ebebeb"
                         StrokeThickness="0"
                         VerticalOptions="End">
                         <Border.StrokeShape>
@@ -164,7 +164,7 @@
                         <Label
                             FontAttributes="Bold"
                             Text="Valgfritt"
-                            TextColor="Black" />
+                            TextColor="#707070" />
                     </Border>
                     <Label
                         Grid.Row="1"
@@ -179,7 +179,7 @@
                     ColumnDefinitions="50,*,*"
                     RowDefinitions="*,*"
                     RowSpacing="16">
-                    <CheckBox />
+                    <CheckBox Color="{DynamicResource PrimaryColor}" />
                     <Label
                         Grid.Column="1"
                         Text="Burgerost"
@@ -191,7 +191,7 @@
                         Text="129,00 NOK"
                         TextColor="Black"
                         VerticalOptions="Center" />
-                    <CheckBox Grid.Row="1" />
+                    <CheckBox Grid.Row="1" Color="{DynamicResource PrimaryColor}" />
                     <Label
                         Grid.Row="1"
                         Grid.Column="1"
