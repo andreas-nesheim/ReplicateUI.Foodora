@@ -106,6 +106,41 @@
                         Text="Velg en"
                         TextColor="Gray" />
                 </Grid>
+
+                <Grid
+                    Margin="0,20,0,0"
+                    ColumnDefinitions="*,*,*"
+                    RowDefinitions="*,*"
+                    RowSpacing="14">
+
+                    <RadioButton Background="Red" GroupName="RadioGroup" />
+                    <Label
+                        Grid.Column="1"
+                        Text="Enkel"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="2"
+                        Text="129,00 NOK"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+
+                    <RadioButton Grid.Row="1" GroupName="RadioGroup" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Dobbel"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="159,00 NOK"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
             </VerticalStackLayout>
 
         </Grid>
