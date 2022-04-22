@@ -140,6 +140,73 @@
                         VerticalOptions="Center" />
                 </Grid>
 
+                <Grid
+                    Margin="0,20,0,0"
+                    ColumnDefinitions="*,*"
+                    RowDefinitions="*,*">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Text="Pimp opp burgeren din"
+                        TextColor="Black" />
+                    <Border
+                        Grid.Column="1"
+                        Margin="0,0,30,0"
+                        Padding="10,6"
+                        Background="LightBlue"
+                        HorizontalOptions="End"
+                        Stroke="LightBlue"
+                        StrokeThickness="0"
+                        VerticalOptions="End">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="60" />
+                        </Border.StrokeShape>
+                        <Label
+                            FontAttributes="Bold"
+                            Text="Valgfritt"
+                            TextColor="Black" />
+                    </Border>
+                    <Label
+                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        Text="Velg opp til 7"
+                        TextColor="Gray" />
+                </Grid>
+
+                <Grid
+                    Margin="0,20,40,0"
+                    ColumnDefinitions="50,*,*"
+                    RowDefinitions="*,*"
+                    RowSpacing="16">
+                    <CheckBox />
+                    <Label
+                        Grid.Column="1"
+                        Text="Burgerost"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="2"
+                        HorizontalOptions="End"
+                        Text="129,00 NOK"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <CheckBox Grid.Row="1" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Bacon"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        HorizontalOptions="End"
+                        Text="159,00 NOK"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </Grid>
+
             </VerticalStackLayout>
 
         </Grid>
