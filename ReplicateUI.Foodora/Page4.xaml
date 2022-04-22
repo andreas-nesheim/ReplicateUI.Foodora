@@ -176,7 +176,7 @@
 
                 <Grid
                     Margin="0,20,40,0"
-                    ColumnDefinitions="50,*,*"
+                    ColumnDefinitions="50,*,*,50"
                     RowDefinitions="*,*"
                     RowSpacing="16">
                     <CheckBox Color="{DynamicResource PrimaryColor}" />
@@ -188,8 +188,16 @@
                     <Label
                         Grid.Column="2"
                         HorizontalOptions="End"
-                        Text="129,00 NOK"
+                        Text="+ 18,00 NOK"
                         TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Column="3"
+                        FontFamily="IconFontTypes"
+                        FontSize="24"
+                        HorizontalOptions="End"
+                        Text="{x:Static helpers:IconFont.InformationOutline}"
+                        TextColor="Gray"
                         VerticalOptions="Center" />
                     <CheckBox Grid.Row="1" Color="{DynamicResource PrimaryColor}" />
                     <Label
@@ -202,8 +210,17 @@
                         Grid.Row="1"
                         Grid.Column="2"
                         HorizontalOptions="End"
-                        Text="159,00 NOK"
+                        Text="+ 20,00 NOK"
                         TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        FontFamily="IconFontTypes"
+                        FontSize="24"
+                        HorizontalOptions="End"
+                        Text="{x:Static helpers:IconFont.InformationOutline}"
+                        TextColor="Gray"
                         VerticalOptions="Center" />
                 </Grid>
 
