@@ -37,12 +37,13 @@
                 </Border>
             </Grid>
 
-            <!--  Info section  -->
             <VerticalStackLayout
                 Grid.Row="1"
-                Margin="0,-50,0,0"
+                Margin="0,-60,0,0"
                 Padding="20,0"
                 Spacing="10">
+
+                <!--  Info section  -->
                 <Grid ColumnDefinitions="140,*,70" ColumnSpacing="10">
                     <Label
                         FontAttributes="Bold"
@@ -73,6 +74,7 @@
                     X2="350"
                     Y2="1" />
 
+                <!--  Selection section  -->
                 <Grid
                     Margin="0,20,0,0"
                     ColumnDefinitions="*,*"
@@ -108,7 +110,7 @@
                 </Grid>
 
                 <Grid
-                    Margin="0,20,40,0"
+                    Margin="0,10,40,0"
                     ColumnDefinitions="50,*,*"
                     RowDefinitions="*,*"
                     RowSpacing="16">
@@ -175,7 +177,7 @@
                 </Grid>
 
                 <Grid
-                    Margin="0,20,40,0"
+                    Margin="0,10,40,0"
                     ColumnDefinitions="50,*,*,50"
                     RowDefinitions="*,*"
                     RowSpacing="16">
@@ -224,8 +226,8 @@
                         VerticalOptions="Center" />
                 </Grid>
 
-                <Grid Margin="0,20,40,30" ColumnDefinitions="50,50,50,*">
-
+                <!--  Bottom section  -->
+                <Grid Margin="0,10,40,30" ColumnDefinitions="50,50,50,*">
                     <Border
                         Margin="10,0,0,0"
                         Background="LightGray"
@@ -238,7 +240,6 @@
                             Text="{x:Static helpers:IconFont.Minus}"
                             TextColor="White" />
                     </Border>
-
                     <Label
                         Grid.Column="1"
                         FontAttributes="Bold"
@@ -248,7 +249,6 @@
                         TextColor="Black"
                         VerticalOptions="Center"
                         VerticalTextAlignment="Center" />
-
                     <Border
                         Grid.Column="2"
                         Margin="0,0,0,0"
@@ -262,12 +262,10 @@
                             Text="{x:Static helpers:IconFont.Plus}"
                             TextColor="White" />
                     </Border>
-
                     <Button
                         Grid.Column="3"
                         Text="Legg i handlekurv"
                         VerticalOptions="Center" />
-
                 </Grid>
 
             </VerticalStackLayout>
