@@ -224,6 +224,50 @@
                         VerticalOptions="Center" />
                 </Grid>
 
+                <Grid Margin="0,20,40,30" ColumnDefinitions="50,50,50,*">
+
+                    <Border
+                        Margin="10,0,0,0"
+                        Background="LightGray"
+                        HorizontalOptions="Center"
+                        Style="{StaticResource FontIconWithRoundedCornersStyle}"
+                        VerticalOptions="Center">
+                        <Label
+                            FontFamily="IconFontTypes"
+                            FontSize="24"
+                            Text="{x:Static helpers:IconFont.Minus}"
+                            TextColor="White" />
+                    </Border>
+
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="1"
+                        TextColor="Black"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
+
+                    <Border
+                        Grid.Column="2"
+                        Margin="0,0,20,0"
+                        Background="{DynamicResource PrimaryColor}"
+                        Style="{StaticResource FontIconWithRoundedCornersStyle}">
+                        <Label
+                            FontFamily="IconFontTypes"
+                            FontSize="24"
+                            Text="{x:Static helpers:IconFont.Plus}"
+                            TextColor="White" />
+                    </Border>
+
+                    <Button
+                        Grid.Column="3"
+                        Text="Legg i handlekurv"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
             </VerticalStackLayout>
 
         </Grid>
